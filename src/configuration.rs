@@ -1,3 +1,5 @@
+use config::Config;
+
 #[derive(serde::Deserialize)]
 pub struct Settings {
     pub database: DatabaseSettings,
@@ -31,14 +33,14 @@ impl DatabaseSettings {
 
 pub fn get_configuration() -> Result<Settings, config::ConfigError> {
     // Initialize our config reader
-    let mut settings = config::Config::default();
-
-    // Add configuration values from a file named `configuration`.
-    // It will look for any top-level file with an extension
-    // that `config` knows how to parse: yaml, json, etc.
-    settings.merge(config::File::with_name("configuration"))?;
+    let settings = Config::builder()
+        // Add configuration values from a file named `configuration`.
+        // It will look for any top-level file with an extension
+        // that `config` knows how to parse: yaml, json, etc.
+        .add_source(config::File::with_name("configuration"))
+        .build()?;
 
     // Try to convert the configuration values it read into
-    // out Settings type
+    // our Settings type
     settings.try_deserialize()
 }
