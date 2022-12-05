@@ -19,7 +19,8 @@ config = "0.13.2"
 reqwest = "0.11.13"
 secrecy = { version = "0.8.0", features = ["serde"] }
 serde = { version = "1.0.148", features = ["derive"] }
-sqlx = { version = "0.6.2", features = ["runtime-actix-rustls", "macros", "postgres", "uuid", "chrono", "migrate"] }
+serde-aux = "4.1.2"
+sqlx = { version = "0.6.2", features = ["runtime-actix-rustls", "macros", "postgres", "uuid", "chrono", "migrate", "offline"] }
 tokio = { version = "1.22.0", features = ["macros", "rt-multi-thread"] }
 tracing = { version = "0.1.37", features = ["log"] }
 tracing-actix-web = "0.6.2"
