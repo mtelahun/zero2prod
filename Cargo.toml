@@ -15,7 +15,7 @@ name = "zero2prod"
 [dependencies]
 actix-web = "4.8.0"
 chrono = "0.4.38"
-config = "0.13.2"
+config = "0.14.0"
 reqwest = "0.12.4"
 secrecy = { version = "0.8.0", features = ["serde"] }
 serde = { version = "1.0.148", features = ["derive"] }
