@@ -17,7 +17,7 @@ actix-web = "4.9.0"
 chrono = "0.4.39"
 config = "0.14.0"
 reqwest = "0.12.12"
-secrecy = { version = "0.8.0", features = ["serde"] }
+secrecy = { version = "0.10.3", features = ["serde"] }
 serde = { version = "1.0.210", features = ["derive"] }
 serde-aux = "4.5.0"
 sqlx = { version = "0.8.3", features = ["runtime-tokio", "tls-rustls-ring", "macros", "postgres", "uuid", "chrono", "migrate"] }
