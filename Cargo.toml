@@ -19,7 +19,7 @@ config = "0.14.0"
 reqwest = "0.12.12"
 secrecy = { version = "0.10.3", features = ["serde"] }
 serde = { version = "1.0.217", features = ["derive"] }
-serde-aux = "4.5.0"
+serde-aux = "4.6.0"
 sqlx = { version = "0.8.3", features = ["runtime-tokio", "tls-rustls-ring", "macros", "postgres", "uuid", "chrono", "migrate"] }
 tokio = { version = "1.43.0", features = ["macros", "rt-multi-thread"] }
 tracing = { version = "0.1.41", features = ["log"] }
