@@ -22,7 +22,7 @@ serde = { version = "1.0.228", features = ["derive"] }
 serde-aux = "4.7.0"
 sqlx = { version = "0.8.6", features = ["runtime-tokio", "tls-rustls-ring", "macros", "postgres", "uuid", "chrono", "migrate"] }
 tokio = { version = "1.48.0", features = ["macros", "rt-multi-thread"] }
-tracing = { version = "0.1.43", features = ["log"] }
+tracing = { version = "0.1.44", features = ["log"] }
 tracing-actix-web = "0.7.20"
 tracing-bunyan-formatter = "0.3"
 tracing-log = "0.2"
